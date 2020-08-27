@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on CorHome</title>
+    <link>http://example.org/categories/</link>
+    <description>Recent content in Categories on CorHome</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Aug 2020 21:07:27 -0500</lastBuildDate>
+    
+	<atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>website design</title>
+      <link>http://example.org/categories/website-design/</link>
+      <pubDate>Mon, 24 Aug 2020 21:07:27 -0500</pubDate>
+      
+      <guid>http://example.org/categories/website-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>website strategy</title>
+      <link>http://example.org/categories/website-strategy/</link>
+      <pubDate>Mon, 24 Aug 2020 21:07:27 -0500</pubDate>
+      
+      <guid>http://example.org/categories/website-strategy/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

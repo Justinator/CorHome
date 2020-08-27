@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://example.org/</loc>
+    <lastmod>2020-08-24T21:07:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/work/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/</loc>
+    <lastmod>2020-08-24T21:07:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/10-ways-to-prep-your-website-for-success/</loc>
+    <lastmod>2020-08-24T21:07:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2020-08-24T21:07:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/website-design/</loc>
+    <lastmod>2020-08-24T21:07:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/categories/website-strategy/</loc>
+    <lastmod>2020-08-24T21:07:27-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/post3/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/post1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/blog/post2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://example.org/tags/</loc>
+  </url>
+  
+</urlset>

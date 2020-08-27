@@ -1,0 +1,26 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "CorHome"
+
+#################### default parameters ################################
+[params]
+logo = "images/logo.svg"
+# Meta data
+description = "This is meta description"
+author = "CorHome"
+# Contact Information
+mobile = "866-431-6005"
+email = "demo@email.com"
+location = "PO Box 753 Yulee, FL 32041"
+# Google Analitycs
+google_analitycs_id = "" # Your ID# search
+
+sectionPagesMenu = "Main"
+
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/swiper/css/swiper-bundle.min.css"
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/swiper/js/swiper-bundle.min.js"
