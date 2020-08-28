@@ -1,8 +1,13 @@
 // Colors
-$darkestBlue: #12141d;
-$darkBlue: #1e2233;
-$medBlue: #303551;
-$lightBlue: #a1c4e4;
-$lightGrey: #fbfdff;
+$lightOrange: #EF8F28;
+$medOrange: #F09028;
+$darkOrange: #C56727;
+$darkBlue: #1c252e;
+$medBlue: #415368;
+$white: #ffffff;
+// Gradients 
+$orangeGradient: linear-gradient(180deg, #F09028 0%, #C46627 100%);
+$blueGradient: linear-gradient(180deg, #38485A 0%, #1C252E 100%);
 // Fonts
-$primaryFont: "Roboto Slab", serif;
+$primaryFont: "Roboto", sans-serif;
+$secondaryFont: 'Frank Ruhl Libre', serif;

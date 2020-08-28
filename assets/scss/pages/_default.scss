@@ -4,13 +4,13 @@
 	width: auto;
 	display: block;
 	top: -100px;
-	background: $darkestBlue;
-	color: $lightGrey;
+	background: $darkBlue;
+	color: $white;
 	padding: 20px;
 	z-index: 1000000000;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	a {
-		color: $lightGrey;
+		color: $white;
 	}
 	&:focus {
 		left: 6px;
@@ -33,7 +33,7 @@
 .loading-screen {
     position: relative;
     padding: 0;
-    background-color: $darkestBlue;
+    background-color: $darkBlue;
     width: 0;
     height: 100%;
 }
@@ -50,15 +50,16 @@
 .hero {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100%;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     margin-top: 85px;
     margin-left: auto;
+    padding: 6rem 1rem;
     @include breakpoint (lg) {
         height: 85vh;
+        margin-top: 170px;
     }
 }
 .hero-inner {

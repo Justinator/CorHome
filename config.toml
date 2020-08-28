@@ -1,10 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://gracious-hopper-ee7b1d.netlify.app/"
 languageCode = "en-us"
 title = "CorHome"
 
 #################### default parameters ################################
 [params]
-logo = "images/logo.svg"
+logo = "images/CorHome-Logo.svg"
 # Meta data
 description = "This is meta description"
 author = "CorHome"

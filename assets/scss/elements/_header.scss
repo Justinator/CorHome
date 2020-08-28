@@ -1,10 +1,11 @@
 .site-header {
-  background-color: $darkestBlue;
-  width: 90%;
+  background-color: $white;
+  width: 100%;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 9999;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 .primary-nav {
   display: flex;
@@ -14,97 +15,88 @@
 }
 .brand-logo {
   opacity: 0;
+  img {
+    width: 70%;
+    @include breakpoint (lg) {
+      width: 100%;
+    }
+  }
 }
 .nav-list {
   position: absolute;
   width: 100%;
   top: 100%;
   left: 0;
-  background: $darkestBlue;
   transform: translateX(120%);
   transition: .3s ease-in-out;
+  background-color: $white;
+  padding: 0;
+  opacity: 0;
   @include breakpoint(lg) {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: auto;
     position: relative;
     top: 0;
     left: 0;
     transform: translateX(0);
+    opacity: 1;
   }
 }
 .nav-open {
   transform: translateX(0);
+  opacity: 1;
 }
 .nav-list-item {
   list-style-type: none;
+  @include breakpoint (lg) {
+    display: inline-block;
+  }
 }
 .nav-item {
   position: relative;
-  display: inline-block;
   text-decoration: none;
-  color: $lightGrey;
-  padding: .5em;
-  font-size: .9em;
-  font-weight: 700;
-  letter-spacing: 2px;
+  color: $darkBlue;
+  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  font-weight: 400;
   opacity: 0;
-  transform: translateY(-20px);
-  &::before, &::after {
-    position: absolute;
-    top: 15%;
-    opacity: 0;
-    color: $lightBlue;
-    transition: .2s ease-in-out;
-    @include breakpoint (lg) {
-      top: 25%;
-    }
-  }
-  &::before {
-    content: "< ";
-    left: -5px;
-    @include breakpoint (lg) {
-      left: 0;
-    }
-  }
-  &::after {
-    content: " />";
-    right: -15px;
-    @include breakpoint (lg) {
-      right: 0;
-    }
-  }
-  &:hover {
-    &::before, &::after {
-      opacity: 1;
-    }
-  }
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.015em;
+  white-space: nowrap;
   @include breakpoint (lg) {
-    padding: 1em;
+    height: 150px;
+  }
+}
+.referral {
+  background: $orangeGradient;
+  color: $white;
+  height: auto;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 2.25rem 3rem;
+  @include breakpoint (lg) {
+    border-radius: 15px;
   }
 }
 .current {
-  &::before, &::after {
+  position: relative;
+  font-weight: 700;
+  &:before {
+    background: $orangeGradient;
+    height: 100%;
+    width: 5px;
     position: absolute;
-    top: 15%;
-    color: $lightBlue;
-    opacity: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    content: "";
     @include breakpoint (lg) {
-      top: 25%;
-    }
-  }
-  &::before {
-    content: "< ";
-    left: -5px;
-    @include breakpoint (lg) {
-      left: 0;
-    }
-  }
-  &::after {
-    content: " />";
-    right: -15px;
-    @include breakpoint (lg) {
-      right: 0;
+      height: 25px;
+      width: 100%;
+      top: -10px;
     }
   }
 }
