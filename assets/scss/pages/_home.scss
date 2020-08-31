@@ -1,25 +1,79 @@
 .home-hero {
     background-image: url("/images/corHome-background.jpg");
 }
-.hero-inner-wrapper {
-    height: 100%;
-    @include breakpoint (md) {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+.hero {
+    &__inner {
+        height: 100%;
         text-align: center;
+        @include breakpoint (md) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        } 
+    }
+    &__title {
+        letter-spacing: -0.025em;
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-family: $primaryFont;
+        font-size: 3rem;
+        letter-spacing: 0.015em;
+        margin-bottom: 40px;
     }
 }
-.hero-title, .hero-subtitle {
+.hero__title, .hero__subtitle {
     color: $white;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
-.hero-title {
-    letter-spacing: -0.025em;
+.center-underline {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    background-color: $medOrange;
+    height: 6px;
+    width: 14rem;
+    margin: 3rem 0;
 }
-.hero-subtitle {
-    font-weight: 400;
-    font-family: $primaryFont;
-    letter-spacing: 0.015em;
-    margin-bottom: 40px;
+.benefit {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 8rem 2rem;
+        background-color: $darkBlue;
+        color: $white;
+    }
+    &__content-inner {
+        max-width: 65rem;
+        margin: 0 auto;
+    }
+    &__heading {
+        color: $white;
+    }
+    &__image {
+        overflow: hidden;
+    }
+}
+.cta {
+    background-image: url("/images/CorHome-CTA.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem 2rem;
+}
+.services {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__col {
+        flex: 1 1 300px; /*  No stretching: */
+        margin: 1rem;
+        p {
+            margin: 0 auto;
+        }
+    }
 }

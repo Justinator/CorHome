@@ -54,12 +54,10 @@
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    margin-top: 85px;
     margin-left: auto;
     padding: 6rem 1rem;
     @include breakpoint (lg) {
         height: 85vh;
-        margin-top: 170px;
     }
 }
 .hero-inner {

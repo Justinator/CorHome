@@ -1,11 +1,39 @@
 .footer {
     background-color: $darkBlue;
+    color: $white;
     padding: 2em;
-    .footer-nav-list {
+    font-size: 1.6rem; 
+    @include breakpoint (lg) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__copyright {
+        text-align: center;
+        @include breakpoint (md) {
+            display: flex;
+            p {
+                margin-right: .5rem;
+            }
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+    }
+    &__nav-list {
         position: relative;
         display: flex;
-        .nav-item {
-            padding: 1em;
-        }
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+    &__nav-list-item {
+        list-style-type: none;
+    }
+    &__nav-item {
+        color: $white;
+    }
+    &__nav-list-item + &__nav-list-item{
+        margin-left: .5rem;
     }
 }

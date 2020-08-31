@@ -7,7 +7,9 @@ $medBlue: #415368;
 $white: #ffffff;
 // Gradients 
 $orangeGradient: linear-gradient(180deg, #F09028 0%, #C46627 100%);
+$orangeGradientReverse: linear-gradient(180deg, #C46627 0%, #F09028 100%);
 $blueGradient: linear-gradient(180deg, #38485A 0%, #1C252E 100%);
+$blueGradientReverse: linear-gradient(180deg, #1C252E 0%, #38485A 100%);
 // Fonts
 $primaryFont: "Roboto", sans-serif;
 $secondaryFont: 'Frank Ruhl Libre', serif;

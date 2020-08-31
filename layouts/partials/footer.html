@@ -1,28 +1,19 @@
-<footer class="site-footer">
-  <div class="container-wide-right footer">
-    <nav class="primary-nav">
-      <div class="logo-wrapper">
-        <a class="brand-logo" href="{{ site.BaseURL }}">
-          <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
-        </a>
-      </div>
-      <ul class="footer-nav-list">
-        {{ $url := .RelPermalink }}
-        {{ range site.Menus.Main }}
-        {{ $active := eq $url .URL }}
-        <li class="nav-list-item">
-          <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}"
-            title="{{ .Title }}">{{ .Title }}</a>
-        </li>
-        {{ end }}
+<footer class="footer">
+  <div class="footer__copyright flex-center">
+    <p>© 2020 CorHome, LLC. All Rights Reserved.</p>
+    <nav class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-list-item"><a href="/privacy-policy/" class="footer__nav-item">Privacy Policy</a></li>
+        <li class="footer__nav-list-item"><a href="/sitemap/" class="footer__nav-item">Sitemap</a></li>
+        <li class="footer__nav-list-item"><a href="/contact/" class="footer__nav-item">Contact Us</a></li>
       </ul>
     </nav>
   </div>
+  <div class="brands flex flex-center">
+    {{ partial "svg-icons/CorHome-Logo.svg" . }}
+    {{ partial "svg-icons/CorLife-Logo.svg" . }}
+  </div>
 </footer>
-<span class="rotated-title">Front-End Developer/Web Designer</span>
-<div class="progress-container">
-  <div class="progress-bar"></div>
-</div>
 <script src="https://unpkg.com/@barba/core"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.min.js"></script>
 {{ partial "scripts" . }}
