@@ -13,7 +13,8 @@ mobile = "866-431-6005"
 email = "demo@email.com"
 location = "PO Box 753 Yulee, FL 32041"
 # Google Analitycs
-google_analitycs_id = "" # Your ID# search
+googleAnalitycs = "" # Your ID# search 
+minifyBundles = true
 
 sectionPagesMenu = "Main"
 
