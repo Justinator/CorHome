@@ -16,10 +16,10 @@ body {
   opacity: 1;
   margin-top: 65px;
   @include breakpoint (md) {
-    margin-top: 85px;
+    margin-top: 75px;
   }
   @include breakpoint (lg) {
-    margin-top: 170px;
+    margin-top: 140px;
   }
 }
 ul {

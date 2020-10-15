@@ -14,7 +14,7 @@ textarea {
 	color: $darkBlue;
 	font-family: $primaryFont;
 	font-size: 2rem;
-	line-height: 2.5rem;
+	line-height: 3rem;
 }
 h1,
 h2,
@@ -30,8 +30,7 @@ h6 {
 	margin-bottom: 15px;
 }
 p {
-	margin-top: 0;
-	margin-bottom: 20px;
+	margin: 0 auto 20px auto;
 	max-width: 70ch;
 }
 /* Font-scale of a major third */
