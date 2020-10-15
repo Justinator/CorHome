@@ -10,9 +10,6 @@
 	text-decoration: none;
 	border-radius: 15px;
 	transition: .3s ease-in-out;
-	@include breakpoint (xl) {
-		font-size: 3rem;
-	}
 }
 .btn-primary {
 	color: $medBlue;
