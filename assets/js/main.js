@@ -8,7 +8,6 @@ gsap.registerPlugin(ScrollTrigger);
 const menuButton = document.querySelector(".menu-button-wrap");
 const menu = document.querySelector(".nav-list");
 const hamburger = document.querySelector(".hamburger");
-const zoomImages = document.querySelectorAll(".zoom");
 
 menuButton.addEventListener("click", toggleMobileMenu);
 
@@ -17,52 +16,117 @@ function toggleMobileMenu() {
     hamburger.classList.toggle("is-active");
 }
 
-function trigger() {
-    console.log(zoomImages);
-    zoomImages.forEach((zoom) => {
-        gsap.to(zoom, {
-            scale: 1.1,
+initPageTransitions();
+
+function homepageAnimations() {
+    fadeInContent();
+    initZoom();
+}
+
+function fadeInContent() {
+    const introSection = document.querySelector(".intro-section");
+    const benefitContent = document.querySelectorAll(".benefit__content-inner");
+    const services = document.querySelector(".services");
+    const cta = document.querySelector(".cta__inner");
+
+    console.log(services);
+    gsap.from(introSection, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: 'Power2.in',
+        scrollTrigger: {
+            trigger: introSection,
+            start: "top bottom-=25",
+            toggleActions: "play none none reset",
+        }
+    });
+    gsap.utils.toArray(benefitContent).forEach((benefit) => {
+        gsap.from(benefit, {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: 'Power2.in',
             scrollTrigger: {
-                trigger: zoom,
-                start: "top bottom",
-                end: "bottom top",
-                scrub: true
+                trigger: benefit,
+                toggleActions: "play none none reset",
+            }
+        })
+    });
+    gsap.from(services, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: 'Power2.in',
+        scrollTrigger: {
+            trigger: services,
+            start: "top bottom-=25",
+            toggleActions: "play none none reset",
+        }
+    });
+    gsap.from(cta, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: 'Power2.in',
+        scrollTrigger: {
+            trigger: cta,
+            start: "top bottom-=25",
+            toggleActions: "play none none reset",
+        }
+    });
+}
+
+function initZoom() {
+    const zoomImages = document.querySelectorAll(".benefit__image");
+    gsap.utils.toArray(zoomImages).forEach((section) => {
+        const image = section.querySelector('img');
+        gsap.to(image, {
+            scaleX: 1.1,
+            scaleY: 1.1,
+            ease: 'power2.inOut',
+            scrollTrigger: {
+                trigger: section,
+                scrub: true,
             }
         })
     });
 }
 
-// hooks that will be triggered before any page transition
-barba.hooks.before(() => {
-    updateMenu();
-});
+function initPageTransitions() {
+    // hooks that will be triggered before any page transition
+    barba.hooks.before(() => {
+        updateMenu();
+    });
 
-// scroll to the top of the page
-barba.hooks.enter(() => {
-    window.scrollTo(0, 0);
-});
+    // scroll to the top of the page
+    barba.hooks.enter(() => {
+        window.scrollTo(0, 0);
+    });
 
-barba.hooks.after(() => {
-    trigger();
-});
+    barba.hooks.after(() => {
+        homepageAnimations();
+    });
 
-barba.init({
-    transitions: [
-        {
-            name: 'fade-transition',
-            once({ next }) {
-                contentAnimation();
-                fadePageIn(next.container);
-                trigger();
+    barba.init({
+        transitions: [
+            {
+                name: 'fade-transition',
+                once({ next }) {
+                    contentAnimation();
+                    fadePageIn(next.container);
+                    homepageAnimations();
+                },
+                // leave: ({ current }) => fadePageOut(current.container),
+                // async/await
+                async leave({ current }) {
+                    await fadePageOut(current.container);
+                },
+                enter({ next }) {
+                    contentAnimation();
+                    fadePageIn(next.container);
+                },
             },
-            // leave: ({ current }) => fadePageOut(current.container),
-            // async/await
-            async leave({ current }) {
-                await fadePageOut(current.container);
-            },
-            enter({ next }) {
-                fadePageIn(next.container);
-            },
-        },
-    ],
-});
+        ],
+    });
+}
