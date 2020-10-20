@@ -1,8 +1,10 @@
 import barba from '@barba/core';
+import barbaPrefetch from '@barba/prefetch';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { fadePageOut, fadePageIn, contentAnimation, updateMenu } from './partials';
 
+barba.use(barbaPrefetch);
 gsap.registerPlugin(ScrollTrigger);
 
 const menuButton = document.querySelector(".menu-button-wrap");
@@ -15,8 +17,6 @@ function toggleMobileMenu() {
     menu.classList.toggle("nav-open");
     hamburger.classList.toggle("is-active");
 }
-
-initPageTransitions();
 
 function homepageAnimations() {
     fadeInContent();
@@ -130,3 +130,5 @@ function initPageTransitions() {
         ],
     });
 }
+
+initPageTransitions();

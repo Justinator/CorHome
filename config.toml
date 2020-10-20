@@ -1,4 +1,4 @@
-baseURL = "https://corehomedev.netlify.app/"
+baseURL = "https://corhomedev.netlify.app/"
 languageCode = "en-us"
 title = "CorHome"
 
@@ -7,7 +7,7 @@ title = "CorHome"
 logo = "images/CorHome-Logo.svg"
 # Meta data
 description = "This is meta description"
-author = "CorHome"
+author = "CorHome, LLC."
 # Contact Information
 mobile = "866-431-6005"
 email = "demo@email.com"
@@ -15,6 +15,7 @@ location = "PO Box 753 Yulee, FL 32041"
 # Google Analitycs
 googleAnalitycs = "" # Your ID# search 
 minifyBundles = true
+disallow_search_engines = false # set robots.txt to disallow everything
 
 sectionPagesMenu = "Main"
 
@@ -25,3 +26,34 @@ link = "plugins/swiper/css/swiper-bundle.min.css"
 # JS Plugins
 [[params.plugins.js]]
 link = "plugins/swiper/js/swiper-bundle.min.js"
+
+enableRobotsTXT = true
+disableAliases = true
+
+# add redirects/headers
+[outputs]
+home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
+
+# remove .{ext} from text/netlify
+[mediaTypes."text/netlify"]
+suffixes = [""]
+delimiter = ""
+
+# add output format for netlify _redirects
+[outputFormats.REDIRECTS]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+
+# add output format for netlify _headers
+[outputFormats.HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
+isPlainText = true
+notAlternative = true
+
+[sitemap]
+  changefreq = "monthly"
+  filename = "sitemap.xml"
+  priority = 0.5

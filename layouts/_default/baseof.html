@@ -4,11 +4,13 @@
 {{ partial "header" . }}
 
 <body data-barba="wrapper">
-  <div class="loading-container">
-    <div class="loading-screen"></div>
-  </div>
-  {{ block "Content" . }}{{ end }}
-  {{ partial "footer" . }}
+  <main id="main-content" class="site-main" role="main" data-barba="container"
+    data-barba-namespace="{{ lower .Page.Title }}">
+    <div class="smooth-scroll" data-scroll-container>
+      {{ block "Content" . }}{{ end }}
+      {{ partial "footer" . }}
+    </div>
+  </main>
 </body>
 
 </html>
