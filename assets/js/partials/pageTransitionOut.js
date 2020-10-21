@@ -1,7 +1,6 @@
 import { gsap } from "gsap";
 
-const fadePageOut = (container) => {
-
+function pageTransitionOut({ container }) {
     const mobileNav = document.querySelector(".nav-list");
     const hamburger = document.querySelector(".hamburger");
 
@@ -11,12 +10,11 @@ const fadePageOut = (container) => {
     }
 
     console.log("fade out");
-    return gsap.to(container, {
+    return gsap.to(".site-main", {
         autoAlpha: 0,
         duration: .3,
         ease: "Expo.easeInOut",
     });
-
 }
 
-export default fadePageOut;
+export default pageTransitionOut;

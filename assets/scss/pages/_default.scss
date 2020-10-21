@@ -55,9 +55,9 @@
     background-position: center center;
     background-repeat: no-repeat;
     margin-left: auto;
-    padding: 6rem 1rem;
+    padding: 12rem 1rem 6rem 1rem;
     @include breakpoint (lg) {
-        height: 85vh;
+        height: 98vh;
     }
 }
 .hero-inner {
