@@ -1,23 +1,23 @@
 baseURL = "https://corhomedev.netlify.app/"
 languageCode = "en-us"
 title = "CorHome"
+enableRobotsTXT = true
+disableAliases = true
 
 #################### default parameters ################################
 [params]
-logo = "images/CorHome-Logo.svg"
-# Meta data
-description = "This is meta description"
-author = "CorHome, LLC."
-# Contact Information
-mobile = "866-431-6005"
-email = "demo@email.com"
-location = "PO Box 753 Yulee, FL 32041"
-# Google Analitycs
-googleAnalitycs = "" # Your ID# search 
-minifyBundles = true
-disallow_search_engines = false # set robots.txt to disallow everything
-
-sectionPagesMenu = "Main"
+  logo = "images/CorHome-Logo.svg"
+  # Meta data
+  description = "This is meta description"
+  author = "CorHome, LLC."
+  # Contact Information
+  mobile = "866-431-6005"
+  email = "demo@email.com"
+  location = "PO Box 753 Yulee, FL 32041"
+  # Google Analitycs
+  googleAnalitycs = "" # Your ID# search 
+  minifyBundles = true
+  sectionPagesMenu = "Main"
 
 # CSS Plugins
 [[params.plugins.css]]
@@ -26,9 +26,6 @@ link = "plugins/swiper/css/swiper-bundle.min.css"
 # JS Plugins
 [[params.plugins.js]]
 link = "plugins/swiper/js/swiper-bundle.min.js"
-
-enableRobotsTXT = true
-disableAliases = true
 
 # add redirects/headers
 [outputs]
