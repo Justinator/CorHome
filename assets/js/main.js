@@ -27,6 +27,8 @@ function fadeInContent() {
     const benefitContent = document.querySelectorAll(".benefit__content-inner");
     const services = document.querySelector(".services");
     const cta = document.querySelector(".cta__inner");
+    const servicesContent = document.querySelectorAll(".service-list__content-inner");
+    const serviceIntro = document.querySelector(".services-intro p");
 
     gsap.from(introSection, {
         opacity: 0,
@@ -35,7 +37,7 @@ function fadeInContent() {
         ease: 'Power2.in',
         scrollTrigger: {
             trigger: introSection,
-            start: "top bottom-=25",
+            start: "top bottom-=50",
             toggleActions: "play none none reset",
             scroller: ".smooth-scroll",
         }
@@ -77,10 +79,36 @@ function fadeInContent() {
             scroller: ".smooth-scroll",
         }
     });
+    gsap.utils.toArray(servicesContent).forEach((service) => {
+        gsap.from(service, {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: 'Power2.in',
+            scrollTrigger: {
+                trigger: service,
+                toggleActions: "play none none reset",
+                scroller: ".smooth-scroll",
+            }
+        })
+    });
+    gsap.from(serviceIntro, {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: 'Power2.in',
+        delay: 1,
+        scrollTrigger: {
+            trigger: serviceIntro,
+            start: "top bottom-=25",
+            toggleActions: "play none none reset",
+            scroller: ".smooth-scroll",
+        }
+    });
 }
 
 function initZoom() {
-    const zoomImages = document.querySelectorAll(".benefit__image");
+    const zoomImages = document.querySelectorAll(".zoom-image");
     gsap.utils.toArray(zoomImages).forEach((section) => {
         const image = section.querySelector('img');
         gsap.to(image, {
@@ -141,7 +169,7 @@ function initPageTransitions() {
             },
             async leave(data) {
                 // animate loading screen in
-                pageTransitionOut(data.current);
+                await pageTransitionOut(data.current);
                 data.current.container.remove();
             },
             async enter(data) {
@@ -187,13 +215,13 @@ function initPageTransitions() {
     }
 }
 
-function delay(n) {
-    n = n || 2000;
-    return new Promise((done) => {
-        setTimeout(() => {
-            done();
-        }, n);
-    });
-}
+// function delay(n) {
+//     n = n || 2000;
+//     return new Promise((done) => {
+//         setTimeout(() => {
+//             done();
+//         }, n);
+//     });
+// }
 
 initPageTransitions();

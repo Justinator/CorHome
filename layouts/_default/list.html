@@ -1,12 +1,15 @@
-{{ define "Content" }}
-<main class="site-main" role="main" data-barba="container" data-barba-namespace="{{ lower .Page.Title }}-section">
-  {{ partial "hero" . }}
-  <h1>{{ .Title }}</h1>
-  <p>content</p>
-  {{ range .Pages }}
-  <h2>
-    <li><a href="{{ .Permalink }}" class="nav-item">{{ .Title }}</a></li>
-  </h2>
-  {{ end }}
-</main>
+{{ define "content" }}
+{{ partial "hero" . }}
+<section class="intro-section padding-top-4 padding-bottom-4">
+  <div class="container">
+    <h2 class="g1 text-center">Get the latest news and expert insights regarding home modifications in the workers’
+      compensation industry.</h2>
+    <span class="center-underline"></span>
+  </div>
+</section>
+{{ range .Pages }}
+<h2>
+  <li><a href="{{ .Permalink }}" class="nav-item">{{ .Title }}</a></li>
+</h2>
+{{ end }}
 {{ end }}

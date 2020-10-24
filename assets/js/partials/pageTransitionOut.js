@@ -12,7 +12,7 @@ function pageTransitionOut({ container }) {
     console.log("fade out");
     return gsap.to(".site-main", {
         autoAlpha: 0,
-        duration: .3,
+        duration: .7,
         ease: "Expo.easeInOut",
     });
 }

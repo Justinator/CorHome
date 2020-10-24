@@ -2,9 +2,9 @@ import { gsap } from "gsap";
 
 function pageTransitionIn({ container }) {
     console.log("fade in");
-    return gsap.from(".site-main", {
+    gsap.from(".site-main", {
         autoAlpha: 0,
-        duration: .3,
+        duration: .7,
         ease: "Expo.easeInOut",
     });
 }

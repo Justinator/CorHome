@@ -1,31 +1,6 @@
 .home-hero {
     background-image: url("/images/corHome-background.jpg");
 }
-.hero {
-    &__inner {
-        height: 100%;
-        text-align: center;
-        @include breakpoint (md) {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        } 
-    }
-    &__title {
-        letter-spacing: -0.025em;
-    }
-    &__subtitle {
-        font-weight: 400;
-        font-family: $primaryFont;
-        font-size: 3rem;
-        letter-spacing: 0.015em;
-        margin-bottom: 40px;
-    }
-}
-.hero__title, .hero__subtitle {
-    color: $white;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
-}
 .center-underline {
     position: relative;
     left: 50%;

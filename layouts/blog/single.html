@@ -1,8 +1,0 @@
-{{ define "Content" }}
-<main class="site-main" role="main" data-barba="container" data-barba-namespace="{{ lower .Page.Title }}-section">
-    {{ partial "blog/blog-hero" . }}
-    <div class="container">
-        {{ .Content }}
-    </div>
-</main>
-{{ end }}
