@@ -2,14 +2,40 @@
 {{ partial "hero" . }}
 <section class="intro-section padding-top-4 padding-bottom-4">
   <div class="container">
-    <h2 class="g1 text-center">Get the latest news and expert insights regarding home modifications in the workers’
+    <h2 class="g1">Get the latest news and expert insights regarding home modifications in the workers’
       compensation industry.</h2>
-    <span class="center-underline"></span>
+    <span class="underline-left"></span>
   </div>
 </section>
-{{ range .Pages }}
-<h2>
-  <li><a href="{{ .Permalink }}" class="nav-item">{{ .Title }}</a></li>
-</h2>
-{{ end }}
+<div class="container">
+  {{ range .Paginator.Pages.ByDate.Reverse }}
+  <article class="blog-summary">
+    <a href="{{ .Permalink }}" class="blog-summary__link">
+      <div class="flex flex-column flex-row-m">
+        <div class="w-100 w-30-m">
+          <div class="blog-summary__image-wrap">
+            {{ $has_image := .Params.image }}
+            {{ if $has_image }}
+            <img src="{{ .Permalink }}{{ .Params.image }}" alt="" class="blog-summary__img img-responsive zoom-images">
+            {{ end }}
+          </div>
+        </div>
+        <div class="w-100 w-70-m">
+          <div class="blog-summary__content">
+            <h3 class="g4">{{ .Title }}</h3>
+
+            <!-- {{ partial "blog/entry-meta" . }} -->
+            <p>
+              {{ if .Params.summary }}{{ .Params.summary | safeHTML }}{{ else }}{{ .Summary  | safeHTML }}{{ end }}
+              <span class="blog-summary__read-more">
+                Read More {{ partial "svg-icons/arrow-right.svg" . }}
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </article>
+  {{ end }}
+</div>
 {{ end }}

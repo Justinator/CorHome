@@ -7,8 +7,11 @@
     <main id="main-content" class="site-main" role="main" data-barba="container"
         data-barba-namespace="{{ lower .Page.Title }}">
         <div class="smooth-scroll" data-scroll-container>
-            {{ block "content" . }}{{ end }}
-            {{ .Content }}
+            {{ partial "blog/blog-hero" . }}
+            <div class="lane-wide blog">
+                {{ .Content }}
+            </div>
+            {{ partial "cta" . }}
             {{ partial "footer" . }}
         </div>
     </main>

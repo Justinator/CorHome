@@ -18,6 +18,7 @@ disableAliases = true
   googleAnalitycs = "" # Your ID# search 
   minifyBundles = true
   sectionPagesMenu = "Main"
+  responsiveImageWidths = [1600, 1200, 1000, 800, 600]
 
 # CSS Plugins
 [[params.plugins.css]]

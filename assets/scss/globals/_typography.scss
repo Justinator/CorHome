@@ -31,7 +31,6 @@ h6 {
 }
 p {
 	margin: 0 auto 20px auto;
-	max-width: 80ch;
 }
 /* Font-scale of a major third */
 h1,
@@ -133,6 +132,14 @@ h6,
 		left: 0;
 		background-color: $medOrange;
 	}
+}
+.underline-left {
+    position: relative;
+    display: block;
+    background-color: $medOrange;
+    height: 6px;
+    width: 14rem;
+    margin: 3rem 0;
 }
 .strike {
 	text-decoration: line-through;
