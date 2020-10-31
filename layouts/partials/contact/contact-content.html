@@ -1,0 +1,52 @@
+<div class="container padding-top-4 padding-bottom-4">
+    <div class="contact-info flex flex-column flex-row-m">
+        <div class="contact-info__col w-100 w-50-l">
+            <div class="contact-info__contact-card contact-info__address">
+                {{ partial "svg-icons/envelope.svg" . }}
+                <div class="center-underline"></div>
+                <h3>Mailing Address</h3>
+                <p>
+                    PO Box 753<br>
+                    Yulee, FL 32041
+                </p>
+            </div>
+        </div>
+        <div class="contact-info__col w-100 w-50-l">
+            <div class="contact-info__contact-card contact-info__phone">
+                {{ partial "svg-icons/phone.svg" . }}
+                <div class="center-underline"></div>
+                <h3>Phone</h3>
+                <p>
+                    Main/Fax: <a href="tel:866-431-6005">866-431-6005</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <div class="underline-left"></div>
+        <div class="contact-form__wrapper">
+            <form name="contact" netlify netlify-honeypot="bot-field">
+                <p style="display:none;">
+                    <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                </p>
+                <div class="contact-form__form-group">
+                    <label for="name">Name</label>
+                    <input name="name" type="name" class="contact-form__form-control" placeholder="Enter name">
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="email">Email</label>
+                    <input name="_replyto" type="email" class="contact-form__form-control" placeholder="Enter email">
+                </div>
+                <div class="contact-form__form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" class="contact-form__form-control" rows="4"
+                        placeholder="Enter message..."></textarea>
+                </div>
+                <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                <button target="_blank" type="submit" class="contact-form__btn btn btn-secondary">Send
+                    Message</button>
+            </form>
+        </div>
+    </div>
+</div>

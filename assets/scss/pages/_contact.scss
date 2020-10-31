@@ -6,3 +6,54 @@
     background-blend-mode: multiply;
     }
 }
+.contact-info {
+    &__col {
+        margin: 2rem;
+    }
+    &__col:nth-of-type(1) {
+        @include breakpoint (lg) {
+            margin: 2rem 2rem 2rem 0;
+        }
+    }
+    &__col:nth-of-type(2) {
+        @include breakpoint (lg) {
+            margin: 2rem 0 2rem 2rem;
+        }
+    }
+    &__contact-card {
+        padding: 4rem 2rem;
+        text-align: center;
+        background-color: #f6f6f6;
+        height: 100%;
+        svg {
+            fill: $darkBlue;
+            width: 75px;
+        }
+        a {
+            color: $darkBlue;
+            transition: .5s ease-out;
+            &:hover, &:focus {
+                color: $darkOrange;
+            }
+        }
+    }
+}
+.contact-form {
+    margin: 6rem 0 4rem 0;
+    .contact-form__form-group input, .contact-form__form-group textarea {
+        background-color: #f6f6f6;
+        border: none;
+        width: 100%;
+        padding: 1rem 2rem;
+        margin-bottom: 2rem;
+    }
+    &__form-group input {
+        height: 6rem;
+    }
+    &__form-group textarea {
+        height: 20rem;
+    }
+    &__btn {
+        border: none;
+    }
+}
