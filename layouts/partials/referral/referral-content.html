@@ -1,0 +1,122 @@
+<div class="fade-wrapper">
+    <div class="container padding-top-4 padding-bottom-4">
+        <div class="contact-form">
+            <h3>To make a referral, please complete and submit the form below. A CorHome team member will contact you
+                within
+                two hours.</h3>
+            <div class="underline-left"></div>
+            <div class="contact-form__wrapper">
+                <form name="make-referral" netlify netlify-honeypot="bot-field" action="/thank-you">
+                    <p style="display:none;">
+                        <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                    </p>
+                    <div class="contact-form__form-group">
+                        <h4>Assigning Company or Adjuster information</h4>
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="phone">Phone</label>
+                        <input name="phone" type="tel" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="email">Email</label>
+                        <input name="_replyto" type="email" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <h4>Secondary Contact or Excess Carrier</h4>
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="phone">Phone</label>
+                        <input name="phone" type="tel" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="email">Email</label>
+                        <input name="_replyto" type="email" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <h4>Nurse case manager information</h4>
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="phone">Phone</label>
+                        <input name="phone" type="tel" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="email">Email</label>
+                        <input name="_replyto" type="email" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <h4>Injured Worker</h4>
+                        <label for="claim-number">Claim number</label>
+                        <input name="claim-number" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="dob">Date of birth</label>
+                        <input name="dob" type="date" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="height">Height</label>
+                        <input name="height" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="weight">Weight</label>
+                        <input name="weight" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="date-of-injury">Date of injury</label>
+                        <input name="date-of-injury" type="date" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="diagnosis">Diagnosis</label>
+                        <input name="diagnosis" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="medical-conditions">Other medical conditions</label>
+                        <input name="medical-conditions" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="current-equipment">Current equipment</label>
+                        <input name="current-equipment" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <h4>Current Hospital/Rehab Facility</h4>
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="discharge-date">Anticipated Discharge Date</label>
+                        <input name="discharge-date" type="date" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <h4>Injured Worker’s Primary Contact</h4>
+                        <label for="name">Name</label>
+                        <input name="name" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="phone">Phone</label>
+                        <input name="phone" type="tel" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="relationship">Relationship to injured worker</label>
+                        <input name="relationship" type="text" class="contact-form__form-control">
+                    </div>
+                    <div class="contact-form__form-group">
+                        <label for="message">Request/comments</label>
+                        <textarea name="message" class="contact-form__form-control" rows="4"></textarea>
+                    </div>
+                    <div style="margin-bottom: 1em;" netlify-recaptcha></div>
+                    <button target="_blank" type="submit" class="contact-form__btn btn btn-secondary">Send
+                        Referral</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

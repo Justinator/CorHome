@@ -24,11 +24,8 @@ const selectAll = (e) => document.querySelectorAll(e);
 
 function fadeInContent() {
     const introSection = document.querySelector(".intro-section");
-    const benefitContent = document.querySelectorAll(".benefit__content-inner");
-    const services = document.querySelector(".services");
-    const cta = document.querySelector(".cta__inner");
-    const servicesContent = document.querySelectorAll(".service-list__content-inner");
-    const serviceIntro = document.querySelector(".services-intro p");
+    const fadeWrapper = document.querySelector(".fade-wrapper .container");
+    const fadeUp = document.querySelectorAll(".fade-up");
 
     gsap.from(introSection, {
         opacity: 0,
@@ -42,64 +39,27 @@ function fadeInContent() {
             scroller: ".smooth-scroll",
         }
     });
-    gsap.utils.toArray(benefitContent).forEach((benefit) => {
-        gsap.from(benefit, {
+    gsap.utils.toArray(fadeUp).forEach((fade) => {
+        gsap.from(fade, {
             opacity: 0,
             y: 20,
             duration: 1,
             ease: 'Power2.in',
             scrollTrigger: {
-                trigger: benefit,
+                trigger: fade,
                 toggleActions: "play none none reset",
                 scroller: ".smooth-scroll",
             }
         })
     });
-    gsap.from(services, {
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        ease: 'Power2.in',
-        scrollTrigger: {
-            trigger: services,
-            start: "top bottom-=25",
-            toggleActions: "play none none reset",
-            scroller: ".smooth-scroll",
-        }
-    });
-    gsap.from(cta, {
-        opacity: 0,
-        y: 20,
-        duration: 1,
-        ease: 'Power2.in',
-        scrollTrigger: {
-            trigger: cta,
-            start: "top bottom-=25",
-            toggleActions: "play none none reset",
-            scroller: ".smooth-scroll",
-        }
-    });
-    gsap.utils.toArray(servicesContent).forEach((service) => {
-        gsap.from(service, {
-            opacity: 0,
-            y: 20,
-            duration: 1,
-            ease: 'Power2.in',
-            scrollTrigger: {
-                trigger: service,
-                toggleActions: "play none none reset",
-                scroller: ".smooth-scroll",
-            }
-        })
-    });
-    gsap.from(serviceIntro, {
+    gsap.from(fadeWrapper, {
         opacity: 0,
         y: 20,
         duration: 1,
         ease: 'Power2.in',
         delay: 1,
         scrollTrigger: {
-            trigger: serviceIntro,
+            trigger: fadeWrapper,
             start: "top bottom-=25",
             toggleActions: "play none none reset",
             scroller: ".smooth-scroll",
