@@ -1,6 +1,6 @@
 ---
 title: Project Gallery
-hero_title: Browse our Recent Projects
+hero_title: Recent Projects
 menu: Main
 weight: 5
 description: this is the project meta description
