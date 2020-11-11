@@ -7,16 +7,14 @@
     }
 }
 .contact-info {
-    &__col {
-        margin: 2rem;
-    }
     &__col:nth-of-type(1) {
-        @include breakpoint (lg) {
+        margin: 0 0 2rem 0;
+        @include breakpoint (md) {
             margin: 2rem 2rem 2rem 0;
         }
     }
     &__col:nth-of-type(2) {
-        @include breakpoint (lg) {
+        @include breakpoint (md) {
             margin: 2rem 0 2rem 2rem;
         }
     }

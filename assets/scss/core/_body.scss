@@ -2,14 +2,8 @@
   box-sizing: border-box;
 }
 body {
-  // background-image: url("/images/CorHome-Mock.jpg");
-  // background-size: cover;
-  // position: relative;
-  // z-index: 999999;
-  // opacity: .5;
   background-color: $white;
   font-family: $primaryFont;
-  height: 200vh;
   overflow-x: hidden;
 }
 .site-main {
@@ -17,4 +11,17 @@ body {
 }
 ul {
   margin: 0;
+}
+// Style highlight to match our themes colors
+::-moz-selection{
+  background: rgba( 197, 103, 39, .8);
+  color: $white;
+}
+::selection{
+  background: rgba( 197, 103, 39, .8);
+  color: $white;
+}
+::-ms-selection{
+  background: rgba( 197, 103, 39, .8);
+  color: $white;
 }

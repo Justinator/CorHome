@@ -1,7 +1,7 @@
 .site-header {
   background-color: $white;
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 9;
@@ -12,6 +12,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
+  overflow: hidden;
   @include breakpoint (lg) {
     padding: 1rem 4rem;
   }
@@ -146,6 +147,7 @@
   transform: translateX(0);
   opacity: 1;
   overflow: hidden;
+  visibility: visible;
   .nav-list-item {
     animation: slideIn ease-in-out .5s forwards .5s;
     opacity: 0;

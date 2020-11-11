@@ -26,6 +26,8 @@ function fadeInContent() {
     const introSection = document.querySelector(".intro-section");
     const fadeWrapper = document.querySelector(".fade-wrapper .container");
     const fadeUp = document.querySelectorAll(".fade-up");
+    const blog = document.querySelector(".blog-container");
+    const blogSummary = document.querySelectorAll(".blog-summary");
 
     gsap.from(introSection, {
         opacity: 0,

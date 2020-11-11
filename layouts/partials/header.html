@@ -1,11 +1,20 @@
 <a class="screen-reader-skip-to-content" href="#main-content" tabindex="0">Skip to main content</a>
 <a class="screen-reader-skip-to-content" href="#footer" tabindex="0">Skip to footer content</a>
 <header class="site-header" data-scroll-sticky data-scroll-target="header">
-  <nav class="primary-nav">
+  <nav class="nav primary-nav">
     <div class="logo-wrapper">
       <a class="brand-logo" href="{{ site.BaseURL }}">
         <img src="{{ site.Params.logo | absURL }}" alt="{{ site.Title }}" class="img-responsive dim" />
       </a>
+    </div>
+    <div class="menu-button-wrap" aria-label="mobile menu toggle button" tabindex="0">
+      <span class="mobile-menu-label">Menu</span>
+      <button class="hamburger hamburger--slider" type="button" aria-haspopup="true" aria-label="Mobile menu button"
+        aria-expanded="false">
+        <span class="hamburger-box" role="menu-toggle">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
     <ul class="nav-list">
       {{ $url := .RelPermalink }}
@@ -20,14 +29,5 @@
         <a href="/make-a-referral/" class="referral nav-item">Make a Referral</a>
       </li>
     </ul>
-    <div class="menu-button-wrap" aria-label="mobile menu toggle button" tabindex="0">
-      <span class="mobile-menu-label">Menu</span>
-      <button class="hamburger hamburger--slider" type="button" aria-haspopup="true" aria-label="Mobile menu button"
-        aria-expanded="false">
-        <span class="hamburger-box" role="menu-toggle">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-    </div>
   </nav>
 </header>
