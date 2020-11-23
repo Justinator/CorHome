@@ -1,19 +1,19 @@
 a {
-	color: $brandColor;
+	color: $darkOrange;
 	transition: 0.2s ease;
 	display: inline-block;
 	&:hover,
 	&:focus {
-		color: $accentColor;
+		color: $darkBlue;
 		transition: 0.2s ease;
-		outline-color: $accentColor;
+		outline-color: $darkBlue;
 	}
 }
 .primary-link,
 .secondary-link {
 	text-decoration: none;
 	position: relative;
-	color: $accentColor;
+	color: $darkOrange;
 	display: inline-block;
 }
 .primary-link:after,
@@ -29,7 +29,7 @@ a {
 }
 .secondary-link:after {
 	content: "";
-	background-color: $accentColor;
+	background-color: $darkOrange;
 }
 .primary-link,
 .secondary-link {

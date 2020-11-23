@@ -4,7 +4,7 @@
 {{ partial "header" . }}
 
 <body data-barba="wrapper">
-    <main id="main-content" class="site-main" role="main" data-barba="container"
+    <main id="main-content" class="site-main {{ .Params.page_class }}" role="main" data-barba="container"
         data-barba-namespace="{{ lower .Page.Title }}">
         <div class="smooth-scroll" data-scroll-container>
             {{ partial "blog/blog-hero" . }}
