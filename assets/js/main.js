@@ -27,7 +27,6 @@ function fadeInContent() {
     const fadeWrapper = document.querySelector(".fade-wrapper .container");
     const fadeUp = document.querySelectorAll(".fade-up");
     const blog = document.querySelector(".blog-container");
-    const blogSummary = document.querySelectorAll(".blog-summary");
 
     gsap.from(introSection, {
         opacity: 0,
@@ -67,6 +66,21 @@ function fadeInContent() {
             scroller: ".smooth-scroll",
         }
     });
+    if (document.body.contains(blog)) {
+        gsap.from(blog, {
+            opacity: 0,
+            y: 20,
+            duration: 1,
+            ease: 'Power2.in',
+            delay: 1.5,
+            scrollTrigger: {
+                trigger: blog,
+                start: "top bottom-=25",
+                toggleActions: "play none none reset",
+                scroller: ".smooth-scroll",
+            }
+        });
+    }
 }
 
 function initZoom() {

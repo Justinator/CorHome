@@ -2,5 +2,5 @@
 title: Home
 menu: Main
 weight: 1
-description: this is the home meta description
+description: CorHome offers home evaluations, accessibility and modification services to injured workers with disabilities and workers’ compensation carriers nationwide.
 ---

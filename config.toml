@@ -8,7 +8,7 @@ disableAliases = true
 [params]
   logo = "images/CorHome-Logo.svg"
   # Meta data
-  description = "This is meta description"
+  description = "CorHome offers home evaluations, accessibility and modification services to injured workers with disabilities and workers’ compensation carriers nationwide."
   author = "CorHome, LLC."
   # Contact Information
   mobile = "866-431-6005"
@@ -55,3 +55,6 @@ notAlternative = true
   changefreq = "monthly"
   filename = "sitemap.xml"
   priority = 0.5
+
+[markup.goldmark.renderer]
+unsafe= true
