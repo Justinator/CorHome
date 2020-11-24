@@ -37,6 +37,9 @@
     }
     &__nav-item {
         color: $white;
+        &:hover {
+            color: $lightOrange;
+        }
     }
     &__nav-list-item + &__nav-list-item{
         margin-left: .5rem;

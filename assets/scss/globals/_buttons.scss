@@ -16,6 +16,7 @@
 	background-color: $white;
 	&:hover,
 	&:focus {
+		color: $medBlue;
 		background-color: rgba($white, .8);
 	}
 }
@@ -24,6 +25,7 @@
 	background-image: $blueGradient;
 	&:hover,
 	&:focus {
+		color: $white;
 		background-image: $blueGradientReverse;
 	}
 }

@@ -115,6 +115,7 @@
     padding: 1.5rem 3rem;
   }
   &:hover, &:focus {
+    color: $white;
     background-image: $orangeGradientReverse;
     &:before {
     @include breakpoint (lg) {
