@@ -2,10 +2,11 @@
 <html lang="en">
 {{ partial "head" . }}
 {{ partial "header" . }}
+{{ $namespace := lower .Page.Title }}
 
 <body data-barba="wrapper">
   <main id="main-content" class="site-main {{ .Params.page_class }}" role="main" data-barba="container"
-    data-barba-namespace="{{ lower .Page.Title }}">
+    data-barba-namespace="{{ anchorize $namespace }}">
     <div class="smooth-scroll" data-scroll-container>
       {{ block "content" . }}{{ end }}
       {{ partial "footer" . }}

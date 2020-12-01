@@ -3,10 +3,12 @@ languageCode = "en-us"
 title = "CorHome"
 enableRobotsTXT = true
 disableAliases = true
+summaryLength = 30
 
 #################### default parameters ################################
+
 [params]
-  logo = "images/CorHome-Logo.svg"
+  logo = "images/CorHome-logo.jpg"
   # Meta data
   description = "CorHome offers home evaluations, accessibility and modification services to injured workers with disabilities and workers’ compensation carriers nationwide."
   author = "CorHome, LLC."

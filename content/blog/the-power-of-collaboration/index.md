@@ -4,7 +4,6 @@ author: CorHome
 date: 2020-01-29
 categories: 
 - News
-summary: "Welcome to the inaugural blog post from CorLife and CorHome! We hope you find this monthly blog informative, interesting and applicable to your position within workers’ compensation."
 image: the-power-of-collaboration-1200x800.jpg
 ---
 ![alt text here](the-power-of-collaboration-1200x800.jpg)

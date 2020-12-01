@@ -1,12 +1,11 @@
 a {
-	color: $darkOrange;
-	transition: 0.2s ease;
+	color: $darkBlue;
+	transition: 0.3s ease;
 	display: inline-block;
 	&:hover,
 	&:focus {
-		color: $darkBlue;
-		transition: 0.2s ease;
-		outline-color: $darkBlue;
+		color: $darkOrange;
+		outline-color: $darkOrange;
 	}
 }
 .primary-link,

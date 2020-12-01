@@ -10,20 +10,32 @@
     padding: 0 2rem 6rem 2rem;
     margin-top: -50px;
     position: relative;
+    figure img {
+        margin: 0 auto;
+    }
+    blockquote {
+        border-left: 5px solid $medBlue;
+        padding: 2rem;
+        p {
+            margin-bottom: 0;
+        }
+    }
 }
 .blog-summary {
     margin-bottom: 4rem;
     border-bottom: 1px solid $darkBlue;
     &__link {
         text-decoration: none;
-        color: $darkBlue;
         h3 {
             transition: .3s ease-out;
         }
         &:hover, &:focus {
             h3, span {
                 color: $darkOrange;
-            }  
+            } 
+            .blog-summary__entry-meta, p.blog-summary__summary {
+                color: $darkBlue;
+            }
             .blog-summary__read-more {
                 svg {
                     fill: $darkOrange;
@@ -40,22 +52,33 @@
     }
     &__img {
         opacity: 1;
-        transition: opacity .5s ease-out;
+        transition: opacity .3s ease-out;
     }
     &__content {
-        @include breakpoint (lg) {
+        @include breakpoint (md) {
             padding: 0 2rem;
         }
     }
+    &__title {
+        margin-bottom: 0;
+    }
+    &__entry-meta {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        transition: .3s ease-out;
+    }
+    &__summary {
+        transition: .3s ease-out;
+    }
     &__read-more {
-        margin-top: 1rem;
+        margin: 1rem 0;
         display: flex;
         align-items: center;
-        transition: .5s ease-out;
+        transition: .3s ease-out;
         svg {
             width: 20px;
             margin-left: 5px;
-            transition: .5s ease-out;
+            transition: .3s ease-out;
         }
     }
 }
@@ -86,7 +109,7 @@
         svg {
             fill: $white;
             width: 20px;
-            transition: .5s ease-out;
+            transition: .3s ease-out;
         }
     }
     &__next {

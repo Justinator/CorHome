@@ -4,7 +4,6 @@ author: CorHome
 date: 2020-06-30
 categories: 
 - News
-summary: "Anyone in the workers’ compensation insurance industry knows that home modification projects can be complex. There are always a minimum of three parties involved: the injured worker, their insurance carrier and the home modification provider."
 image: who’s-at-the-core-of-successful-home-modification-1200x800.jpg
 ---
 

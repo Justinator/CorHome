@@ -27,13 +27,6 @@
             fill: $darkBlue;
             width: 75px;
         }
-        a {
-            color: $darkBlue;
-            transition: .5s ease-out;
-            &:hover, &:focus {
-                color: $darkOrange;
-            }
-        }
     }
 }
 .contact-form {
