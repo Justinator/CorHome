@@ -1,4 +1,4 @@
-name: Test Lighthouse Check
+name: CorHome Lighthouse Audit
 on: push
 
 jobs:
