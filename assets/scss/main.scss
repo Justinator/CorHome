@@ -1,7 +1,8 @@
-@import "core/normalize";
-@import "core/breakpoints";
+@import "globals/normalize";
+@import "globals/breakpoints";
+@import "globals/fonts";
 @import "globals/variables";
-@import "core/body";
+@import "globals/body";
 @import "globals/layout";
 @import "globals/links";
 @import "globals/buttons";

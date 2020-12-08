@@ -21,12 +21,13 @@
       {{ range site.Menus.Main }}
       {{ $active := eq $url .URL }}
       <li class="nav-list-item">
-        <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}"
+        <a {{if $active }}class="current nav-item" {{end}} class="nav-item" href="{{ .URL }}" aria-label="{{ .Name }}"
           title="{{ .Title }}">{{ .Title }}</a>
       </li>
       {{ end }}
       <li class="nav-list-item">
-        <a href="/make-a-referral/" class="referral nav-item">Make a Referral</a>
+        <a href="/make-a-referral/" class="referral nav-item" aria-label="Make a Referral" title="Make a Referral">Make
+          a Referral</a>
       </li>
     </ul>
   </nav>
