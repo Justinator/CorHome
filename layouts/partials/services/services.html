@@ -20,7 +20,11 @@
             {{ partial "svg-icons/home-assessments.svg" . }}
         </div>
         <div class="service-list__image zoom-image w-100 w-50-l">
-            <img src="/images/complete-home-assessments.jpg" alt="" class="cover zoom">
+            <picture>
+                <source loading="lazy" sizes="100vw" srcset="{{ .Site.BaseURL }}images/Complete-Home-Assessments-600.webp 480w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-800.webp 768w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-1200.webp 1024w," type="image/webp" >
+                <source srcset="{{ .Site.BaseURL }}images/trust-with-the-injured-worker-optimized.jpg" type="image/jpeg" > 
+                <img src="images/Complete-Home-Assessments-1200.jpg" alt="Alt Text!" class="cover zoom">
+            </picture>
         </div>
     </div>
     <div class="flex flex-column flex-row-l">
