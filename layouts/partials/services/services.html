@@ -1,6 +1,6 @@
 <section class="service-list">
-    <div class="service-list__wrapper flex flex-column-reverse flex-row-l">
-        <div class="service-list__content w-100 w-50-l">
+    <div class="service-list__wrapper flex flex-column-reverse flex-row-m">
+        <div class="service-list__content w-100 w-80-m w-50-l">
             <div class="service-list__content-inner fade-up">
                 <h3 class="service-list__heading g4"><span class="underline">Complete Home Assessments</span></h3>
                 <p>All assessments are completed on site by an occupational therapy professional who collaborates with
@@ -19,22 +19,22 @@
         <div class="icon-container">
             {{ partial "svg-icons/home-assessments.svg" . }}
         </div>
-        <div class="service-list__image zoom-image w-100 w-50-l">
+        <div class="service-list__image zoom-image w-100 w-20-m w-50-l">
             <picture>
-                <source loading="lazy" sizes="100vw" srcset="{{ .Site.BaseURL }}images/Complete-Home-Assessments-600.webp 480w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-800.webp 768w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-1200.webp 1024w," type="image/webp" >
-                <source srcset="{{ .Site.BaseURL }}images/trust-with-the-injured-worker-optimized.jpg" type="image/jpeg" > 
-                <img src="images/Complete-Home-Assessments-1200.jpg" alt="Alt Text!" class="cover zoom">
+                <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .Site.BaseURL }}images/Complete-Home-Assessments-600.webp 480w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-800.webp 768w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-1200.webp 1024w" type="image/webp" >
+                <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .Site.BaseURL }}images/Complete-Home-Assessments-600.webp 480w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-800.webp 768w, {{ .Site.BaseURL }}images/Complete-Home-Assessments-1200.webp 1024w" type="image/jpeg" > 
+                <img src="images/Complete-Home-Assessments-1200.jpg" alt="Woman drawing out blueprint for a complete home assessment on clear glass screen" class="cover zoom">
             </picture>
         </div>
     </div>
-    <div class="flex flex-column flex-row-l">
-        <div class="service-list__image zoom-image w-100 w-50-l">
+    <div class="flex flex-column flex-row-m">
+        <div class="service-list__image zoom-image w-100 w-20-m w-50-l">
             <img src="/images/equipment-installations.jpg" alt="" class="cover zoom">
         </div>
         <div class="icon-container icon-container-center">
             {{ partial "svg-icons/equipment-installation.svg" . }}
         </div>
-        <div class="service-list__content w-100 w-50-l">
+        <div class="service-list__content w-100 w-80-m w-50-l">
             <div class="service-list__content-inner fade-up">
                 <h3 class="service-list__heading g4"><span class="underline">Equipment Installation</span></h3>
                 <p>From grab bars to complex lifts, we tackle projects of all sizes and apply the same careful attention
@@ -51,8 +51,8 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-column-reverse flex-row-l">
-        <div class="service-list__content w-100 w-50-l">
+    <div class="flex flex-column-reverse flex-row-m">
+        <div class="service-list__content w-100 w-80-m w-50-l">
             <div class="service-list__content-inner fade-up">
                 <h3 class="service-list__heading g4"><span class="underline">Full-Service Construction</span></h3>
                 <p>With a dedicated construction services manager at the center of every home modification to organize,
@@ -72,7 +72,7 @@
         <div class="icon-container">
             {{ partial "svg-icons/full-service-construction.svg" . }}
         </div>
-        <div class="service-list__image zoom-image w-100 w-50-l">
+        <div class="service-list__image zoom-image w-100 w-20-m w-50-l">
             <img src="/images/full-service-construction.jpg" alt="" class="cover zoom">
         </div>
     </div>
