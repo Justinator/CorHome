@@ -9,12 +9,20 @@
             </div>
         </div>
         <div class="benefit__image zoom-image w-100 w-50-m">
-            <img src="/images/photo-1.jpg" alt="" class="cover zoom">
+            <picture>
+                <source srcset="{{ .Site.BaseURL }}images/photo-1.webp" type="image/webp" >
+                <source srcset="{{ .Site.BaseURL }}images/photo-1.jpg" type="image/jpeg" > 
+                <img src="images/photo-1.jpg" alt="Alt Text!" class="cover zoom">
+            </picture>
         </div>
     </div>
     <div class="flex flex-column-reverse flex-row-m">
         <div class="benefit__image zoom-image w-100 w-50-m">
-            <img src="/images/trust-with-the-injured-worker-optimized.jpg" alt="" class="cover zoom">
+            <picture>
+                <source srcset="{{ .Site.BaseURL }}images/trust-with-the-injured-worker-optimized.webp" type="image/webp" >
+                <source srcset="{{ .Site.BaseURL }}images/trust-with-the-injured-worker-optimized.jpg" type="image/jpeg" > 
+                <img src="images/trust-with-the-injured-worker-optimized.jpg" alt="Alt Text!" class="cover zoom">
+            </picture>
         </div>
         <div class="benefit__content w-100 w-50-m text-center">
             <div class="benefit__content-inner fade-up">
@@ -35,7 +43,11 @@
             </div>
         </div>
         <div class="benefit__image zoom-image w-100 w-50-m">
-            <img src="/images/cohesion-with-the-contractor-optimized.jpg" alt="" class="cover zoom">
+            <picture>
+                <source srcset="{{ .Site.BaseURL }}images/cohesion-with-the-contractor-optimized.webp" type="image/webp" >
+                <source srcset="{{ .Site.BaseURL }}images/cohesion-with-the-contractor-optimized.jpg" type="image/jpeg" > 
+                <img src="images/cohesion-with-the-contractor-optimized.jpg" alt="Alt Text!" class="cover zoom">
+            </picture>
         </div>
     </div>
 </section>
