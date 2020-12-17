@@ -1,13 +1,3 @@
-.services-hero {
-  background-image: linear-gradient(0deg, #425368, #425368),
-    url("/images/Gateway-w-Handrails-Mobile.jpg");
-  background-blend-mode: multiply;
-  @include breakpoint(lg) {
-    background-image: linear-gradient(0deg, #425368, #425368),
-      url("/images/Gateway-w-Handrails-Desktop.jpg");
-    background-blend-mode: multiply;
-  }
-}
 .service-list {
   .flex-container {
     display: flex;
@@ -29,6 +19,9 @@
     flex-direction: column;
     justify-content: center;
     padding: 4rem 2rem;
+    @include breakpoint(md) {
+      padding: 4rem 8rem;
+    }
     @include breakpoint(lg) {
       padding: 8rem;
     }

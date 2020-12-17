@@ -1,5 +1,11 @@
 .home-hero {
-  background-image: url("/images/simplifying-the-workers-compensation-home-modification-process.jpg");
+  background-image: url("/images/background-images/simplifying-the-workers-compensation-home-modification-process-800.jpg");
+  @include breakpoint(md) {
+    background-image: url("/images/background-images/simplifying-the-workers-compensation-home-modification-process-1400.jpg");
+  }
+  @include breakpoint(xl) {
+    background-image: url("/images/background-images/simplifying-the-workers-compensation-home-modification-process-1800.jpg");
+  }
 }
 .center-underline {
   position: relative;

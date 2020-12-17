@@ -13,14 +13,14 @@
   align-items: center;
   padding: 1rem 2rem;
   overflow: hidden;
-  @include breakpoint (lg) {
+  @include breakpoint(lg) {
     padding: 1rem 4rem;
   }
 }
 .brand-logo {
   img {
     width: 210px;
-    @include breakpoint (sm) {
+    @include breakpoint(sm) {
       width: 100%;
       max-width: 300px;
     }
@@ -32,11 +32,11 @@
   top: 100%;
   left: 0;
   transform: translateX(120%);
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
   background-color: $white;
   padding: 0;
   opacity: 0;
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,7 +50,7 @@
 }
 .nav-list-item {
   list-style-type: none;
-  @include breakpoint (lg) {
+  @include breakpoint(md) {
     display: inline-block;
   }
 }
@@ -65,7 +65,7 @@
   align-items: center;
   letter-spacing: 0.015em;
   white-space: nowrap;
-  @include breakpoint (lg) {
+  @include breakpoint(md) {
     height: 120px;
     padding: 1.2rem 1.5rem;
   }
@@ -79,28 +79,29 @@
     right: 0;
     content: "";
     opacity: 0;
-    transition: .3s ease-in;
-    @include breakpoint (lg) {
+    transition: 0.3s ease-in;
+    @include breakpoint(md) {
       height: 25px;
       width: 100%;
       top: -10px;
     }
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     &:before {
-    @include breakpoint (lg) {
-      height: 25px;
-      width: 100%;
-      top: -10px;
-      background: $orangeGradient;
-      position: absolute;
-      left: 0;
-      right: 0;
-      content: "";
-      opacity: 1;
+      @include breakpoint(md) {
+        height: 25px;
+        width: 100%;
+        top: -10px;
+        background: $orangeGradient;
+        position: absolute;
+        left: 0;
+        right: 0;
+        content: "";
+        opacity: 1;
+      }
     }
   }
-}
 }
 .referral {
   background-image: $orangeGradient;
@@ -109,20 +110,21 @@
   font-size: 2rem;
   font-weight: 700;
   padding: 1.2rem 5rem;
-  transition: .3s ease-in-out;
-  @include breakpoint (lg) {
+  transition: 0.3s ease-in-out;
+  @include breakpoint(md) {
     border-radius: 15px;
     padding: 1.5rem 3rem;
   }
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $white;
     background-image: $orangeGradientReverse;
     &:before {
-    @include breakpoint (lg) {
-      opacity: 0;
+      @include breakpoint(md) {
+        opacity: 0;
+      }
     }
   }
-}
 }
 .current {
   position: relative;
@@ -137,7 +139,7 @@
     right: 0;
     content: "";
     opacity: 1;
-    @include breakpoint (lg) {
+    @include breakpoint(md) {
       height: 25px;
       width: 100%;
       top: -10px;
@@ -150,29 +152,29 @@
   overflow: hidden;
   visibility: visible;
   .nav-list-item {
-    animation: slideIn ease-in-out .5s forwards .5s;
+    animation: slideIn ease-in-out 0.5s forwards 0.5s;
     opacity: 0;
   }
-  .nav-list-item:nth-child(1){
-    animation-delay: .1s;
+  .nav-list-item:nth-child(1) {
+    animation-delay: 0.1s;
   }
-  .nav-list-item:nth-child(2){
-    animation-delay: .2s;
+  .nav-list-item:nth-child(2) {
+    animation-delay: 0.2s;
   }
-  .nav-list-item:nth-child(3){
-    animation-delay: .3s;
+  .nav-list-item:nth-child(3) {
+    animation-delay: 0.3s;
   }
-  .nav-list-item:nth-child(4){
-    animation-delay: .4s;
+  .nav-list-item:nth-child(4) {
+    animation-delay: 0.4s;
   }
-  .nav-list-item:nth-child(5){
-    animation-delay: .5s;
+  .nav-list-item:nth-child(5) {
+    animation-delay: 0.5s;
   }
-  .nav-list-item:nth-child(6){
-    animation-delay: .6s;
+  .nav-list-item:nth-child(6) {
+    animation-delay: 0.6s;
   }
-  .nav-list-item:nth-child(7){
-    animation-delay: .7s;
+  .nav-list-item:nth-child(7) {
+    animation-delay: 0.7s;
   }
   @keyframes slideIn {
     from {
@@ -189,7 +191,7 @@
   cursor: pointer;
   display: flex;
   align-items: center;
-  @include breakpoint(lg) {
+  @include breakpoint(md) {
     display: none;
   }
 }
@@ -198,7 +200,7 @@
 }
 .mobile-menu-wrapper {
   transform: translateY(-100%);
-  @include breakpoint (lg) {
+  @include breakpoint(md) {
     display: none;
   }
 }
