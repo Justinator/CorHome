@@ -146,6 +146,16 @@
     }
   }
 }
+.nav-list-item:nth-child(7) {
+  .current {
+    &:before {
+      opacity: 0;
+      @include breakpoint(md) {
+        opacity: 0;
+      }
+    }
+  }
+}
 .nav-open {
   transform: translateX(0);
   opacity: 1;
