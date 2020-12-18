@@ -16,6 +16,7 @@ summaryLength = 30
   mobile = "866-431-6005"
   email = "demo@email.com"
   location = "PO Box 753 Yulee, FL 32041"
+  disallowSearchEngines = true
   # Google Analitycs
   googleAnalitycs = "" # Your ID# search 
   minifyBundles = true
@@ -36,22 +37,22 @@ home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]
-suffixes = [""]
-delimiter = ""
+  suffixes = [""]
+  delimiter = ""
 
 # add output format for netlify _redirects
 [outputFormats.REDIRECTS]
-mediatype = "text/netlify"
-baseName = "_redirects"
-isPlainText = true
-notAlternative = true
+  mediatype = "text/netlify"
+  baseName = "_redirects"
+  isPlainText = true
+  notAlternative = true
 
 # add output format for netlify _headers
 [outputFormats.HEADERS]
-mediatype = "text/netlify"
-baseName = "_headers"
-isPlainText = true
-notAlternative = true
+  mediatype = "text/netlify"
+  baseName = "_headers"
+  isPlainText = true
+  notAlternative = true
 
 [sitemap]
   changefreq = "monthly"
@@ -59,4 +60,4 @@ notAlternative = true
   priority = 0.5
 
 [markup.goldmark.renderer]
-unsafe= true
+  unsafe= true

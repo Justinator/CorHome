@@ -6,35 +6,189 @@
     <description>Recent content in Home on CorHome</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 25 Nov 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://corhomedev.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blog Post 3</title>
-      <link>https://corhomedev.netlify.app/blog/post3/</link>
+      <title>Services</title>
+      <link>https://corhomedev.netlify.app/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://corhomedev.netlify.app/blog/post3/</guid>
+      <guid>https://corhomedev.netlify.app/services/</guid>
+      <description>Services Page</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://corhomedev.netlify.app/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/about/</guid>
+      <description>About Page</description>
+    </item>
+    
+    <item>
+      <title>Project Gallery</title>
+      <link>https://corhomedev.netlify.app/project-gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/project-gallery/</guid>
+      <description>Project Gallery</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://corhomedev.netlify.app/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/contact/</guid>
+      <description>Contact Page</description>
+    </item>
+    
+    <item>
+      <title>Why Occupational Therapists are Ideal for Home Assessments</title>
+      <link>https://corhomedev.netlify.app/blog/why-occupational-therapists-are-ideal-for-home-assessments/</link>
+      <pubDate>Wed, 25 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/why-occupational-therapists-are-ideal-for-home-assessments/</guid>
+      <description>A home assessment determines the details of an injured workers’ home and what their specific challenges may be within that home. However, home assessments can come in varying degrees of detail and recommendation.</description>
+    </item>
+    
+    <item>
+      <title>Make a Move With our Trusted ATPs</title>
+      <link>https://corhomedev.netlify.app/blog/make-a-move-with-our-trusted-atps/</link>
+      <pubDate>Mon, 19 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/make-a-move-with-our-trusted-atps/</guid>
+      <description>There’s an important service that is hard to come by in the world of workers’ compensation: Effective delivery and set up of ALL large durable medical equipment (DME).</description>
+    </item>
+    
+    <item>
+      <title>A More Comfortable FES Bike Option</title>
+      <link>https://corhomedev.netlify.app/blog/a-more-comfortable-fes-bike-option/</link>
+      <pubDate>Tue, 11 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/a-more-comfortable-fes-bike-option/</guid>
+      <description>CorLife has been at the helm of the DME ship in workers’ compensation for a long time. We have seen a thing or two when it comes to Functional Electrical Stimulation (FES) bike options.</description>
+    </item>
+    
+    <item>
+      <title>Who’s at the core of a successful home modification?</title>
+      <link>https://corhomedev.netlify.app/blog/whos-at-the-core-of-a-successful-home-modification/</link>
+      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/whos-at-the-core-of-a-successful-home-modification/</guid>
+      <description>Anyone in the workers’ compensation insurance industry knows that home modification projects can be complex. There are always a minimum of three parties involved: the injured worker, their insurance carrier and the home modification provider.</description>
+    </item>
+    
+    <item>
+      <title>Clean Up Your Workflow This Spring</title>
+      <link>https://corhomedev.netlify.app/blog/clean-up-your-workflow-this-spring/</link>
+      <pubDate>Tue, 12 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/clean-up-your-workflow-this-spring/</guid>
+      <description>It’s time for spring cleaning! Eliminate what you don’t need, such as an unnecessary chain of network service providers. This month, we’ve illustrated a clear picture of what makes CorLife truly different from other network service providers.</description>
+    </item>
+    
+    <item>
+      <title>Bringing Quality Care Home</title>
+      <link>https://corhomedev.netlify.app/blog/bringing-quality-care-home/</link>
+      <pubDate>Mon, 17 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/bringing-quality-care-home/</guid>
+      <description>This month, let’s talk home health care! Healing is truly done best when in the comfort of home. Home can help an injured worker regain some normalcy and routine.</description>
+    </item>
+    
+    <item>
+      <title>The Power of Collaboration</title>
+      <link>https://corhomedev.netlify.app/blog/the-power-of-collaboration/</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/the-power-of-collaboration/</guid>
+      <description>Welcome to the inaugural blog post from CorLife and CorHome! We hope you find this monthly blog informative, interesting and applicable to your position within workers’ compensation.</description>
+    </item>
+    
+    <item>
+      <title>Our Ranking on the 2019 Inc. 5000</title>
+      <link>https://corhomedev.netlify.app/blog/our-ranking-on-the-2019-inc.-5000/</link>
+      <pubDate>Mon, 26 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/our-ranking-on-the-2019-inc.-5000/</guid>
+      <description>Inc. Magazine Unveils Its Annual List of America’s Fastest-Growing Private Companies—the Inc. 5000 CorLife, LLC Ranks No. 1700 on the 2019 Inc. 5000 With Three-Year Revenue Growth of 240 Percent NEW YORK, August 19, 2019 – Inc.</description>
+    </item>
+    
+    <item>
+      <title>Philanthropy is the Gift That Keeps on Giving</title>
+      <link>https://corhomedev.netlify.app/blog/philanthropy-is-the-gift-that-keeps-on-giving/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/philanthropy-is-the-gift-that-keeps-on-giving/</guid>
+      <description>This time of year is known for giving, generosity and kindness. At CorLife, that’s our approach all year long. President/CEO Lauren Underhill believes as a business owner, there’s an obligation to give back to the communities CorLife serves.</description>
+    </item>
+    
+    <item>
+      <title>The Simple Benefits of Clinical Claim Handlers</title>
+      <link>https://corhomedev.netlify.app/blog/the-simple-benefits-of-clinical-claim-handlers/</link>
+      <pubDate>Fri, 09 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/the-simple-benefits-of-clinical-claim-handlers/</guid>
+      <description>CorLife’s unique process gives peace of mind to injured workers. As you may have heard, CorLife operates with a core philosophy of simplicity. And we stand out in our industry because of how we put this philosophy into practice.</description>
+    </item>
+    
+    <item>
+      <title>Not All Equipment is Alike: The Need for Expertise in DME Part I</title>
+      <link>https://corhomedev.netlify.app/blog/not-all-equipment-is-alike-the-need-for-expertise-in-dme-part-i/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/not-all-equipment-is-alike-the-need-for-expertise-in-dme-part-i/</guid>
+      <description>Part One: Knowledge is Key in DME – The role of the ATP Assistive Technology Professional There is growing trend in the Workers Compensation industry for carriers and excess carriers to contract with Network Services Providers under the belief that having a menu of services supplied by a single provider will somehow streamline the process and cut costs in the area of claims management.</description>
+    </item>
+    
+    <item>
+      <title>Not All Equipment is Alike: The Need for Expertise in DME Part II</title>
+      <link>https://corhomedev.netlify.app/blog/not-all-equipment-is-alike-the-need-for-expertise-in-dme-part-ii/</link>
+      <pubDate>Fri, 30 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/blog/not-all-equipment-is-alike-the-need-for-expertise-in-dme-part-ii/</guid>
+      <description>Part II: Counting the Cost; Containing the Cost – The Importance of Transparency in DME In part one of this series, we addressed the importance of having a certified Assistive Technology Professional who has special experience and knowledge in the area of DME and complex rehabilitation.</description>
+    </item>
+    
+    <item>
+      <title>Make a Referral</title>
+      <link>https://corhomedev.netlify.app/make-a-referral/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/make-a-referral/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Post 1</title>
-      <link>https://corhomedev.netlify.app/blog/post1/</link>
+      <title>Privacy Policy</title>
+      <link>https://corhomedev.netlify.app/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://corhomedev.netlify.app/blog/post1/</guid>
+      <guid>https://corhomedev.netlify.app/privacy-policy/</guid>
+      <description>By accessing or using CorHome&amp;rsquo;s website, you agree to the terms of this Online Privacy Policy, as outlined below. If you do not agree to these terms, please do not access or use this site.</description>
+    </item>
+    
+    <item>
+      <title>Sitemap</title>
+      <link>https://corhomedev.netlify.app/sitemap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://corhomedev.netlify.app/sitemap/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Post 2</title>
-      <link>https://corhomedev.netlify.app/blog/post2/</link>
+      <title>Thank you</title>
+      <link>https://corhomedev.netlify.app/thank-you/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://corhomedev.netlify.app/blog/post2/</guid>
-      <description></description>
+      <guid>https://corhomedev.netlify.app/thank-you/</guid>
+      <description>Thank you for your message</description>
     </item>
     
   </channel>
