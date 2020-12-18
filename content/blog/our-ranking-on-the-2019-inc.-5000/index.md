@@ -2,21 +2,22 @@
 title: Our Ranking on the 2019 Inc. 5000
 author: CorHome
 date: 2019-08-26
-categories: 
-- News
+categories:
+  - News
 image: CorLife-Logo.jpg
 ---
+
 ![CorLife Logo](CorLife-Logo.jpg)
 
 ### _Inc._ Magazine Unveils Its Annual List of America’s Fastest-Growing Private Companies—the Inc. 5000
- 
+
 #### CorLife, LLC Ranks No. 1700 on the 2019 Inc. 5000 With Three-Year Revenue Growth of 240 Percent
 
 <strong>NEW YORK, August 19, 2019</strong> – _Inc._ magazine revealed that CorLife, LLC is number 1700 on its annual Inc. 5000 list, the most prestigious ranking of the nation’s fastest-growing private companies. The list represents a unique look at the most successful companies within the American economy’s most dynamic segment—its independent small businesses. Microsoft, Dell, Domino’s Pizza, Pandora, Timberland, LinkedIn, Yelp, Zillow, and many other well-known names gained their first national exposure as honorees on the Inc. 5000.
 
 “This is such an honor! Thank you to everyone who has given this company a chance to show how we can serve you and your claimants. We have had some amazing champions of our service over the past ten years. I am truly grateful and forever in debt to a few key champions who gave CorLife a chance ten years ago. They continue to believe we do workers’ compensation ancillary services better,” said Lauren Underhill, President, CorLife, LLC.
 
-Not only have the companies on the 2019 Inc. 5000 (which are listed online at Inc.com, with the top 500 companies featured in the September issue of Inc., available on newsstands August 20) been very competitive within their markets, but the list as a whole shows staggering growth compared with prior lists. The 2019 Inc. 5000 achieved an astounding three-year average growth of 454 percent, and a median rate of 157 percent. The Inc. 5000’s aggregate revenue was $237.7 billion in 2018, accounting for 1,216,308 jobs over the past three years.
+Not only have the companies on the 2019 Inc. 5000 (which are listed online at Inc.com, with the top 500 companies featured in the September issue of _Inc._, available on newsstands August 20) been very competitive within their markets, but the list as a whole shows staggering growth compared with prior lists. The 2019 Inc. 5000 achieved an astounding three-year average growth of 454 percent, and a median rate of 157 percent. The Inc. 5000’s aggregate revenue was $237.7 billion in 2018, accounting for 1,216,308 jobs over the past three years.
 
 “The companies on this year’s Inc. 5000 have followed so many different paths to success,” says _Inc._ Editor-in-Chief James Ledbetter. “There’s no single course you can follow or investment you can make that will guarantee this kind of spectacular growth. But what they have in common is persistence and seizing opportunities.”
 

@@ -1,9 +1,9 @@
 ---
-title: The Simple Benefits of Clinical Claim Handlers  
+title: The Simple Benefits of Clinical Claim Handlers
 author: CorHome
 date: 2018-11-09
-categories: 
-- News
+categories:
+  - News
 image: The-Simple-Benefits-of-Clinical-Claim-Handlers-Cropped.jpg
 ---
 
@@ -11,7 +11,7 @@ image: The-Simple-Benefits-of-Clinical-Claim-Handlers-Cropped.jpg
 
 #### CorLife’s unique process gives peace of mind to injured workers.
 
-As you may have heard, CorLife operates with a core philosophy of simplicity. And we stand out in our industry because of how we put this philosophy into practice. At CorLife, each case is managed—from start to finish—by ONE specially-trained clinical claim handler (CCH). This CCH is assigned to a claim from the beginning of the claim and follows it through to the end. They serve as the care and communication hub for each claim.
+As you may have heard, CorLife operates with a core philosophy of _simplicity_. And we stand out in our industry because of how we put this philosophy into practice. At CorLife, each case is managed—from start to finish—by ONE specially-trained clinical claim handler (CCH). This CCH is assigned to a claim from the beginning of the claim and follows it through to the end. They serve as the care and communication hub for each claim.
 
 Each CorLife CCH touches each case file multiple times every day—they manage ALL notes, filing updates and scheduling and they relay information directly to the carrier, instead of requiring the carrier to get information from the home health agency. This streamlined approach ensures consistent, accurate communication, greater efficiency and faster decision making.
 
