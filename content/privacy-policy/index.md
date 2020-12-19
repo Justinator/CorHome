@@ -2,22 +2,23 @@
 title: Privacy Policy
 page_class: privacy
 ---
+
 By accessing or using CorHome's website, you agree to the terms of this Online Privacy Policy, as outlined below. If you do not agree to these terms, please do not access or use this site.
 
 ### Collection of Personal Information
 
 When you merely use the website for informational purposes, i.e. if you do not log in to use the website, register or otherwise provide us with information, we do not collect any personal data, except for the data transmitted by your browser that enables you to access the website. This includes:
 
-* IP address
-* Date and time of the request
-* Content of the request (specific site)
-* Access status / HTTP status code
-* Volume of data transmitted each time
-* Website from which the request comes
-* Browser
-* Operating system and its interface
-* Language and version of the browser software
-* Your country of origin
+- IP address
+- Date and time of the request
+- Content of the request (specific site)
+- Access status / HTTP status code
+- Volume of data transmitted each time
+- Website from which the request comes
+- Browser
+- Operating system and its interface
+- Language and version of the browser software
+- Your country of origin
 
 When you engage in certain activities on this site, you may be asked to provide certain information about yourself by filling out and submitting an online form. It is completely optional for you to engage in these activities. If you elect to engage in these activities, however, you may be required to provide personal information, such as your name, mailing address, e-mail address and other personal identifying information.
 
@@ -99,4 +100,3 @@ For information about how to manage cookies for individual browsers, here are re
 <a href="https://support.microsoft.com/en-gb/help/17442/windows-internet-explorer-delete-manage-cookies" target="_blank" class="primaryLink">Internet Explorer</a><br>
 <a href="https://support.apple.com/kb/PH21411?locale=en_US" target="_blank" class="primaryLink">Safari</a><br>
 <a href="https://privacy.microsoft.com/en-us/windows-10-microsoft-edge-and-privacy" target="_blank" class="primaryLink">Edge</a><br>
-		

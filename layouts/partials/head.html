@@ -25,7 +25,7 @@
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
     {{ $postcss := $scss | resources.PostCSS | minify }}
     {{ $bundle := slice $swipercss | resources.Concat "css/bundle.css" }}
-    {{ $css := $bundle | resources.PostCSS | minify }}
+    {{ $css := $bundle | resources.PostCSS (dict "config" "postcss.config.js") | minify }}
     <!-- <link rel="stylesheet" href="{{ $css.Permalink }}" media="screen" /> -->
     <link rel="stylesheet" href="{{ $postcss.Permalink }}" media="screen" />
 
@@ -36,6 +36,7 @@
         rel="stylesheet">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="preload" href="{{ "js/main.js" | absURL }}" as="script">
     {{ "<!--Favicon-->" | safeHTML }}
     <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">

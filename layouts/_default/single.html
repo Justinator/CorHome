@@ -3,13 +3,14 @@
 {{ partial "head" . }}
 {{ partial "header" . }}
 {{ $namespace := lower .Page.Title }}
+{{ $mainClass := lower .Page.Title }}
 
 <body data-barba="wrapper">
-    <main id="main-content" class="site-main {{ .Params.page_class }}" role="main" data-barba="container"
-        data-barba-namespace="{{ anchorize $namespace }}">
+    <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main"
+        data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
         <div class="smooth-scroll" data-scroll-container>
             {{ partial "blog/blog-hero" . }}
-            <div class="fade-wrapper container blog">
+            <div class="fade-wrapper container blog-content">
                 {{ .Content }}
             </div>
             {{ partial "cta" . }}

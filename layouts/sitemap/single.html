@@ -1,7 +1,7 @@
 {{ define "content" }}
 {{ partial "blog/blog-hero" . }}
 <div class="fade-wrapper">
-    <div class="container padding-top-4 padding-bottom-4">
+    <div class="sitemap-content container padding-top-4 padding-bottom-4">
         <div class="flex flex-column flex-row-m">
             <div class="w-100 w-30-m">
                 <h3>Pages</h3>
@@ -21,12 +21,14 @@
             </div>
             <div class="w-100 w-70-m">
                 <h3>Blog Posts</h3>
-                {{ $pages := .Site.RegularPages }}
-                {{ $blog := where $pages "Type" "blog" }}
-                {{ $page := where $pages "Type" "page" }}
-                {{ range $blog }}
-                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                {{ end }}
+                <ul class="sitemap-nav-list">
+                    {{ $pages := .Site.RegularPages }}
+                    {{ $blog := where $pages "Type" "blog" }}
+                    {{ $page := where $pages "Type" "page" }}
+                    {{ range $blog }}
+                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                    {{ end }}
+                </ul>
             </div>
         </div>
     </div>
