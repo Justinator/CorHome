@@ -23,6 +23,12 @@
 }
 .contact-form {
   margin: 6rem 0 4rem 0;
+  &__netlify-bot-field {
+    opacity: 0;
+    height: 0;
+    width: 0;
+    margin: 0;
+  }
   .contact-form__form-group input,
   .contact-form__form-group textarea {
     background-color: #f6f6f6;
