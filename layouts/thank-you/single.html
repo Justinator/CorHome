@@ -1,12 +1,12 @@
 {{ define "content" }}
 {{ partial "blog/blog-hero" . }}
-<section class="fade-wrapper padding-top-4 padding-bottom-4">
+<section class="fade-wrapper padding-top-4 padding-bottom-4" data-scroll-section>
     <div class="container">
         <h2 class="g1">Thank you for your message. A CorHome team member will contact you within two hours.</h2>
         <span class="underline-left"></span>
     </div>
 </section>
-<div class="container blog-container">
+<div class="container blog-container" data-scroll-section>
   <h3>Read some of our recent posts to learn more about CorHome.</h3>
     {{ $pages := .Site.RegularPages }}
     {{ $blog := where $pages "Type" "blog" }}

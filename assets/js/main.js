@@ -118,7 +118,6 @@ function initPageTransitions() {
     // do something before the transition starts
     barba.hooks.before(() => {
         updateMenu();
-        removeScrollbar();
     });
 
     // do something after the transition finishes
@@ -126,6 +125,7 @@ function initPageTransitions() {
         // reinit locomotive scroll
         scroll.init();
         homepageAnimations();
+        removeScrollbar();
     });
 
     // scroll to the top of the page
