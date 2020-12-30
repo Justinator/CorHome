@@ -10,7 +10,7 @@
         data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
         <div class="smooth-scroll" data-scroll-container>
             {{ partial "blog/blog-hero" . }}
-            <div class="fade-wrapper container blog-content">
+            <div class="fade-wrapper container blog-content" data-scroll-section>
                 {{ .Content }}
             </div>
             {{ partial "cta" . }}
