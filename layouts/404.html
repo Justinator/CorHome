@@ -1,8 +1,21 @@
-{{ define "main" }}
+<!DOCTYPE html>
+<html lang="en">
+{{ partial "head" . }}
+{{ partial "header" . }}
+{{ $namespace := lower .Page.Title }}
+{{ $mainClass := lower .Page.Title }}
 
-<article>
-    <h1>Page Not Found!</h1>
-    <p>The page you requested could not be found.</p>
-</article>
+<body data-barba="wrapper">
+  <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main"
+    data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
+    <div class="smooth-scroll" data-scroll-container>
+        <article>
+            <h1>Page Not Found!</h1>
+            <p>The page you requested could not be found.</p>
+        </article>
+      {{ partial "footer" . }}
+    </div>
+  </main>
+</body>
 
-{{ end }}
+</html>
