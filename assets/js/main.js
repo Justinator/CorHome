@@ -26,17 +26,19 @@ function fadeInContent() {
     const fadeUp = document.querySelectorAll(".fade-up");
     const blog = document.querySelector(".blog-container");
 
-    gsap.from(introSection, {
-        opacity: 0,
-        y: 20,
-        duration: .5,
-        ease: 'Power2.in',
-        scrollTrigger: {
-            trigger: introSection,
-            start: "top bottom-=50",
-            toggleActions: "play none none reset",
-        }
-    });
+    if (document.body.contains(introSection)) {
+        gsap.from(introSection, {
+            opacity: 0,
+            y: 20,
+            duration: .5,
+            ease: 'Power2.in',
+            scrollTrigger: {
+                trigger: introSection,
+                start: "top bottom-=50",
+                toggleActions: "play none none reset",
+            }
+        });
+    }
     gsap.utils.toArray(fadeUp).forEach((fade) => {
         gsap.from(fade, {
             opacity: 0,
@@ -49,18 +51,20 @@ function fadeInContent() {
             }
         })
     });
-    gsap.from(fadeWrapper, {
-        opacity: 0,
-        y: 20,
-        duration: .5,
-        ease: 'Power2.in',
-        delay: .5,
-        scrollTrigger: {
-            trigger: fadeWrapper,
-            start: "top bottom-=25",
-            toggleActions: "play none none reset",
-        }
-    });
+    if (document.body.contains(fadeWrapper)) {
+        gsap.from(fadeWrapper, {
+            opacity: 0,
+            y: 20,
+            duration: .5,
+            ease: 'Power2.in',
+            delay: .5,
+            scrollTrigger: {
+                trigger: fadeWrapper,
+                start: "top bottom-=25",
+                toggleActions: "play none none reset",
+            }
+        });
+    }
     if (document.body.contains(blog)) {
         gsap.from(blog, {
             opacity: 0,
