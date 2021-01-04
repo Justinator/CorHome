@@ -1,21 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-{{ partial "head" . }}
-{{ partial "header" . }}
-{{ $namespace := lower .Page.Title }}
-{{ $mainClass := lower .Page.Title }}
-
-<body data-barba="wrapper">
-  <main id="main-content" class="site-main {{ .Params.page_class }} {{ anchorize $mainClass }}" role="main"
-    data-barba="container" data-barba-namespace="{{ anchorize $namespace }}">
-    <div class="smooth-scroll" data-scroll-container>
+{{ define "content" }}
+{{ partial "blog/blog-hero" . }}
+<section class="fade-wrapper padding-top-4 padding-bottom-4" data-scroll-section>
+    <div class="container">
         <article>
-            <h1>Page Not Found!</h1>
-            <p>The page you requested could not be found.</p>
+            <p>The page you requested could not be found. <a href="{{ "/" | relURL }}">Go back to the homepage.</a></p>
         </article>
-      {{ partial "footer" . }}
     </div>
-  </main>
-</body>
-
-</html>
+</section>
+{{ partial "blog-feed" . }}
+{{ end }}
