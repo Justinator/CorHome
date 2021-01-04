@@ -9,7 +9,6 @@ function pageTransitionOut({ container }) {
         hamburger.classList.remove("is-active");
     }
 
-    console.log("fade out");
     return gsap.to(".site-main", {
         autoAlpha: 0,
         duration: .7,

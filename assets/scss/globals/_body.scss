@@ -13,15 +13,15 @@ ul {
   margin: 0;
 }
 // Style highlight to match our themes colors
-::-moz-selection{
-  background: rgba( 197, 103, 39, .8);
+::-moz-selection {
+  background: rgba(197, 103, 39, 0.8);
   color: $white;
 }
-::selection{
-  background: rgba( 197, 103, 39, .8);
+::selection {
+  background: rgba(197, 103, 39, 0.8);
   color: $white;
 }
-::-ms-selection{
-  background: rgba( 197, 103, 39, .8);
+::-ms-selection {
+  background: rgba(197, 103, 39, 0.8);
   color: $white;
 }
