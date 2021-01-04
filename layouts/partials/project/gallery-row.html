@@ -1,0 +1,18 @@
+<div class="gallery__row flex flex-column flex-row-m">
+    <div class="gallery__item fade-up w-100 w-50-m">
+        <picture>
+            <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .image1 }}-600.avif 500w, {{ .image1 }}-800.avif 800w" type="image/avif" >
+            <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .image1 }}-600.webp 500w, {{ .image1 }}-800.webp 800w" type="image/webp" >
+            <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .image1 }}-600.jpg 500w, {{ .image1 }}-800.jpg 800w" type="image/jpeg" > 
+            <img src="{{ .image1 }}-800.jpg" alt="{{ .image1ALT }}">
+        </picture>
+    </div>
+    <div class="gallery__item fade-up w-100 w-50-m">
+        <picture>
+            <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .image2 }}-600.avif 500w, {{ .image2 }}-800.avif 800w" type="image/avif" >
+            <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .image2 }}-600.webp 500w, {{ .image2 }}-800.webp 800w" type="image/webp" >
+            <source sizes="(max-width: 56.25em) 100vw, 50vw" srcset="{{ .image2 }}-600.jpg 500w, {{ .image2 }}-800.jpg 800w" type="image/jpeg" > 
+            <img src="{{ .image2 }}-800.jpg" alt="{{ .image2ALT }}">
+        </picture>
+    </div>
+</div>
