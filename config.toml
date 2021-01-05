@@ -1,4 +1,4 @@
-baseURL = "https://corhomedev.netlify.app/"
+baseURL = "/"
 languageCode = "en-us"
 title = "CorHome"
 enableRobotsTXT = true
