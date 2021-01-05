@@ -65,20 +65,6 @@ function fadeInContent() {
             }
         });
     }
-    if (document.body.contains(blog)) {
-        gsap.from(blog, {
-            opacity: 0,
-            y: 20,
-            duration: .5,
-            ease: 'Power2.in',
-            delay: .5,
-            scrollTrigger: {
-                trigger: blog,
-                start: "top bottom-=25",
-                toggleActions: "play none none reset",
-            }
-        });
-    }
 }
 
 function initZoom() {
