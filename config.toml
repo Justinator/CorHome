@@ -18,7 +18,7 @@ summaryLength = 30
   location = "PO Box 753 Yulee, FL 32041"
   disallowSearchEngines = true
   # Google Analitycs
-  googleAnalitycs = "" # Your ID# search 
+  googleAnalitycs = "G-XSFCQZ2NFJ" # Your ID# search 
   minifyBundles = true
   sectionPagesMenu = "Main"
   responsiveImageWidths = [1600, 1200, 1000, 800, 600]
