@@ -95,6 +95,8 @@ function initPageTransitions() {
     // do something after the transition finishes
     barba.hooks.after(() => {
         homepageAnimations();
+        ga('set', 'page', window.location.pathname);
+        ga('send', 'pageview');
     });
 
     // scroll to the top of the page
