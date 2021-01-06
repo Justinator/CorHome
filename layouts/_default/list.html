@@ -6,7 +6,7 @@
     <span class="underline-left"></span>
   </div>
 </section>
-<div class="container blog-container" data-scroll-section>
+<section class="container blog-container" data-scroll-section>
   {{ range .Paginator.Pages.ByDate.Reverse }}
   <article class="fade-up blog-summary">
     <a href="{{ .Permalink }}" class="blog-summary__link">
@@ -36,5 +36,5 @@
   </article>
   {{ end }}
   {{ partial "blog/custom-pagination.html" . }}
-</div>
+</section>
 {{ end }}

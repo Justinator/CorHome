@@ -1,4 +1,4 @@
-<div class="fade-wrapper" data-scroll-section>
+<section class="fade-wrapper" data-scroll-section>
     <div class="container padding-top-10 padding-bottom-10">
         <div class="contact-form">
             <h3>To make a referral, please complete and submit the form below. A CorHome team member will contact you
@@ -12,16 +12,16 @@
                     </p>
                     <div class="contact-form__form-group">
                         <h4>Assigning Company or Adjuster information</h4>
-                        <label for="name">Name</label>
-                        <input name="name" type="text" class="contact-form__form-control">
+                        <label for="name">Name*</label>
+                        <input name="name" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="phone">Phone</label>
-                        <input name="phone" type="tel" class="contact-form__form-control">
+                        <label for="phone">Phone*</label>
+                        <input name="phone" type="tel" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="email">Email</label>
-                        <input name="_replyto" type="email" class="contact-form__form-control">
+                        <label for="email">Email*</label>
+                        <input name="_replyto" type="email" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
                         <h4>Secondary Contact or Excess Carrier</h4>
@@ -51,16 +51,16 @@
                     </div>
                     <div class="contact-form__form-group">
                         <h4>Injured Worker</h4>
-                        <label for="claim-number">Claim number</label>
-                        <input name="claim-number" type="text" class="contact-form__form-control">
+                        <label for="claim-number">Claim number*</label>
+                        <input name="claim-number" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="name">Name</label>
-                        <input name="name" type="text" class="contact-form__form-control">
+                        <label for="name">Name*</label>
+                        <input name="name" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="dob">Date of birth</label>
-                        <input name="dob" type="date" class="contact-form__form-control">
+                        <label for="dob">Date of birth*</label>
+                        <input name="dob" type="date" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
                         <label for="height">Height</label>
@@ -71,20 +71,20 @@
                         <input name="weight" type="text" class="contact-form__form-control">
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="date-of-injury">Date of injury</label>
-                        <input name="date-of-injury" type="date" class="contact-form__form-control">
+                        <label for="date-of-injury">Date of injury*</label>
+                        <input name="date-of-injury" type="date" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="diagnosis">Diagnosis</label>
-                        <input name="diagnosis" type="text" class="contact-form__form-control">
+                        <label for="diagnosis">Diagnosis*</label>
+                        <input name="diagnosis" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
                         <label for="medical-conditions">Other medical conditions</label>
                         <input name="medical-conditions" type="text" class="contact-form__form-control">
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="current-equipment">Current equipment</label>
-                        <input name="current-equipment" type="text" class="contact-form__form-control">
+                        <label for="current-equipment">Current equipment*</label>
+                        <input name="current-equipment" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
                         <h4>Current Hospital/Rehab Facility</h4>
@@ -97,20 +97,20 @@
                     </div>
                     <div class="contact-form__form-group">
                         <h4>Injured Worker’s Primary Contact</h4>
-                        <label for="name">Name</label>
-                        <input name="name" type="text" class="contact-form__form-control">
+                        <label for="name">Name*</label>
+                        <input name="name" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="phone">Phone</label>
-                        <input name="phone" type="tel" class="contact-form__form-control">
+                        <label for="phone">Phone*</label>
+                        <input name="phone" type="tel" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="relationship">Relationship to injured worker</label>
-                        <input name="relationship" type="text" class="contact-form__form-control">
+                        <label for="relationship">Relationship to injured worker*</label>
+                        <input name="relationship" type="text" class="contact-form__form-control" required>
                     </div>
                     <div class="contact-form__form-group">
-                        <label for="message">Request/comments</label>
-                        <textarea name="message" class="contact-form__form-control" rows="4"></textarea>
+                        <label for="message">Request/comments*</label>
+                        <textarea name="message" class="contact-form__form-control" rows="4" required></textarea>
                     </div>
                     <div style="margin-bottom: 1em;" netlify-recaptcha></div>
                     <button target="_blank" type="submit" class="contact-form__btn btn btn-secondary">Send
@@ -119,4 +119,4 @@
             </div>
         </div>
     </div>
-</div>
+</section>
