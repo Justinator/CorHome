@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
     <title>{{ .Site.Title }} | {{ .Page.Title }}</title>
 
+    <meta itemprop="name" content="{{ .Title }}">
+    <meta itemprop="description" content="{{ .Description }}">
+    <meta itemprop="image" content="{{ .Params.image }}">
+
     <meta property="og:site_name" content="{{ .Site.Title }}">
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ .Title }}" />
     <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:locale" content="en_US" />
-
-    {{ if .Description }}
+    <meta property="og:image" content="{{ .Params.image }}">
     <meta property="og:description" content="{{ .Description }}" />
     <meta name="description" content="{{ .Description }}">
-    {{ end }}
 
     <link rel="canonical" href="{{ .Permalink }}" />
 
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Test website">
+    <meta name="twitter:description" content="{{ .Description }}">
     <meta name="twitter:site" content="@p4lm" />
+    <meta name="twitter:image" content="{{ .Params.image }}">
 
     {{ $swipercss := resources.Get "css/swiper-bundle.css" }}
     {{ $scss := resources.Get "scss/main.scss" | toCSS }}
